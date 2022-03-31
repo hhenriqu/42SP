@@ -6,9 +6,10 @@
 #    By: hhenriqu <hhenriqu@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 18:46:58 by hhenriqu          #+#    #+#              #
-#    Updated: 2022/03/31 18:47:24 by hhenriqu         ###   ########.fr        #
+#    Updated: 2022/03/31 18:55:20 by hhenriqu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 //testando e comitando!
+include studio.h
