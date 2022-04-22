@@ -1,0 +1,45 @@
+// ponteiros //
+
+  ex enderecos de memoria 
+[1][2][3][4][5][6][7][8][9]
+
+int var = 321 <- conteudo da variavel!
+int *ptr = ' ' <- vazio!
+--- &var é 5  <- endereco de memoria onde esta alocado o valor de VAR 321
+--- &ptr é 2  <- endereco de memoria reservado para ponteiro porem ainda vazio pois recebe um enderecos
+- se *ptr = &var <- aponta para endereço 5 e consecutivamente recebe 321 como conteudo.
+
+//
+
+//// ESTUDOS DE PONTEIROS & ARRAYS (VETORES E MATRIZES)
+//*arrays sao definidos em dois tipos, vetores quando tiver apenas uma dimensao
+//e metriz quando houver mais de uma;
+
+char x; // variavel simples, aloca dados confrome atribuidos.
+
+char *x; // Famoso ponteiro, o '*' (asterisco || estrelinha) significa que estamos
+		// APONTANDO para a primeira posicao de uma array;
+
+char x = "helio" // [h][e][l][i][o]  <- ou seja o ponteiro aponta para 'h' ou &x = x[0]
+				//   0  1  2  3  4      primeira posicao de x
+				
+//------------------------------------------------------------------------------------//
+//EXEMPLO - EXERCICIO INTERNET - VIDEO//
+
+int *pvet[2]; // Variavel tipo INT - Ponteiro PVET [MATRIZ]
+int x = 10, y[2] = {20,30}; // declaracao de x e y no caso y tem duas casas
+pvet[0] = &x; // primeira posicao do pvet armazena um endereco
+pvet[1] = y // segunda posicao de pvet tambem armazera um endereco, como y `e
+			// array nao precisa de &, naturalmente ja aponta pra primeira posicao
+
+printf ("pvet[0] %p\n",pvet[0]);//chama &x
+printf ("pvet[1] %p\n",pvet[1]);//chama &y[0]
+printf ("*pvet[0] %p\n",*pvet[0]);//chama conteudo de &x no caso x
+printf ("pvet[1] %p\n",pvet[1][1]);//chama conteudo de &y na posicao [1] no caso y[1]
+
+//------------------------------------------------------------------------------------//
+// malloc e free
+malloc serve para alocar memoria em bytes
+arr = (int * ) malloc(n * sizeof(int));
+
+free(arr);
